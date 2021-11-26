@@ -1,19 +1,19 @@
 module.exports.USER = {
     APPROVAL: {
-        BANNED : -1,
-        PENDING:  0,
+        BANNED: -1,
+        PENDING: 0,
         APPROVED: 1
     },
-    LEVEL :{
+    LEVEL: {
         GUEST: 0,
-        USER:  1,
+        USER: 1,
         ADMIN: 2
-    } 
+    }
 }
 
 module.exports.THREAD = {
-    PINNED:1,
-    UNPINNED:0,
-    LOCKED:1,
-    UNLOCKED:0,
+    PINNED: 1,
+    UNPINNED: 0,
+    LOCKED: 1,
+    UNLOCKED: 0,
 }
