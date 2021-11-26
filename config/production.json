@@ -3,10 +3,10 @@
     "secret": "my super-secret auth string",
     "salt": "my salt string",
     "MySQL": {
-        "host": "something",
-        "user": "something",
-        "database": "some",
-        "password": "somesome"
+        "host": "eu-cdbr-west-01.cleardb.com",
+        "user": "973a8c4f",
+        "database": "heroku_39a31598991dc0e",
+        "password": "973a8c4f"
     },
     "port": 3001
 }
