@@ -10,7 +10,7 @@ async function getUserById(id) {
 
 function auth(minimumLevel = 0) {
     return async (req, res, next) => {
-        const token = req.header('x-auth-token')
+        const token = req.header('X-Auth-Token')
         if (token) {
             try {
                 const decoded = jwt.verify(token, config.get('secret'))

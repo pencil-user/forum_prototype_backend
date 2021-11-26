@@ -34,9 +34,9 @@ router.get('/',
 
         let result2 = await postService.countPostsByThread(req.query.thread_id)
 
-        res.append('-offset', req.query.offset)
-        res.append('-limit', req.query.limit)
-        res.append('-total', result2)
+        res.append('-Offset', req.query.offset)
+        res.append('-Limit', req.query.limit)
+        res.append('-Total', result2)
         res.status(200).json(result)
     }
 )
