@@ -30,4 +30,4 @@ app.use('/api/users', users)
 app.use('/api/messages', messages)
 
 
-app.listen(process.env.PORT || config.get('PORT'), () => console.log("server working at " + config.get('PORT')))
+app.listen(config.get('port'), () => console.log("server working at " + config.get('port')))

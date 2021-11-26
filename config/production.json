@@ -1,12 +1,10 @@
 {
-    "name": "forum",
+    "name": "forum - production",
     "secret": "my super-secret auth string",
     "salt": "my salt string",
     "MySQL": {
         "host": "eu-cdbr-west-01.cleardb.com",
         "user": "b2aa7304059d5d",
-        "database": "heroku_39a31598991dc0e",
-        "password": "973a8c4f"
-    },
-    "PORT": 3001
+        "database": "heroku_39a31598991dc0e"
+    }
 }

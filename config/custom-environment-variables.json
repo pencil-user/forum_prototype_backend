@@ -1,0 +1,6 @@
+{
+    "MySQL": {
+        "password": "MYSQL_DATABASE_PASSWORD"
+    },
+    "port": "PORT"
+}

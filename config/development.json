@@ -1,0 +1,8 @@
+{
+    "MySQL": {
+        "host" : "localhost",
+        "user" : "admin",
+        "database" : "forum_proj",
+        "password": "myadmin"
+    }
+}
