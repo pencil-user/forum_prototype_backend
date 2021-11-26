@@ -8,5 +8,5 @@
         "database": "heroku_39a31598991dc0e",
         "password": "973a8c4f"
     },
-    "port": 3001
+    "PORT": 3001
 }
