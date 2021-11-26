@@ -1,0 +1,12 @@
+{
+    "name": "forum",
+    "secret": "my super-secret auth string",
+    "salt": "my salt string",
+    "MySQL": {
+        "host": "something",
+        "user": "something",
+        "database": "some",
+        "password": "somesome"
+    },
+    "port": 3001
+}
