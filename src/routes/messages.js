@@ -21,7 +21,7 @@ router.get('/:userid', auth(USER_LEVEL.USER),
 
         let result2 = await messageService.countUnreadMessagesByUser(userid)
 
-        res.append('-Unread-Count', result2)
+        res.append('X-Unread-Count', result2)
         res.status(200).send(result)
 
     }

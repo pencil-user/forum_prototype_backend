@@ -21,9 +21,9 @@ router.get('/:input',
 
         let queryCount = await threadService.countFindThreads(input)
 
-        res.append('-Offset', req.query.offset)
-        res.append('-Limit', req.query.limit)
-        res.append('-Count', queryCount)
+        res.append('X-Offset', req.query.offset)
+        res.append('X-Limit', req.query.limit)
+        res.append('X-Count', queryCount)
 
         res.status(200).send(result)
 
