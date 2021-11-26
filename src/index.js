@@ -20,7 +20,7 @@ app.use(express.json())
 
 app.use(cors)
 
-app.use('/api/threads', threads)
+app.use('/', '/api/threads', threads)
 
 app.use('/api/posts', posts)
 
