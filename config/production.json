@@ -1,5 +1,5 @@
 {
-    "name": "forum - production",
+    "name": "forum-production",
     "secret": "my super-secret auth string",
     "salt": "my salt string",
     "MySQL": {

@@ -1,4 +1,5 @@
 {
+    "name": "forum-development",
     "MySQL": {
         "host" : "localhost",
         "user" : "admin",
