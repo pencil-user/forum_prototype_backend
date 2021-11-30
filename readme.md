@@ -27,6 +27,8 @@ Requirments:
 
 ------------------------
 
+- Forum uses markdown rules for formatting posts
+
 - Only admin can lock and pin threads. Only admin can delete and edit posts and threads not his own
 
 - Anyone can delete or edit their own posts and threads, except anonymous posters
