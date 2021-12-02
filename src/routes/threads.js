@@ -113,9 +113,9 @@ router.delete('/:id', auth(USER_LEVEL.USER),
 
         if (req._user.level < USER_LEVEL.ADMIN) // admin can delete any thread, ordinary users can only alter their own
         {
-            let posts = await threadService.getThreadById(id)
+            let thread = await threadService.getThreadById(id)
 
-            if (posts[0].created_by_id !== req._user.id) {
+            if (thread.created_by_id !== req._user.id) {
                 res.status(401).send({ error: 'access denied' })
                 return;
             }

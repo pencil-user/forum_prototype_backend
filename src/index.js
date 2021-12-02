@@ -15,8 +15,9 @@ const app = express()
 
 app.use(express.json())
 
-//app.use(
-//   (req, res, next) => setTimeout(next, 1000 + Math.random() * 2000))
+if (config.get('name') === 'forum-development')
+    app.use(
+        (req, res, next) => setTimeout(next, 1000 + Math.random() * 2000))
 
 app.use(cors)
 
