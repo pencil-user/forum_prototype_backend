@@ -116,9 +116,9 @@ async function getOneConversation(convoId) {
     }
 }
 
-async function setToRead(id) {
-    await knex('messages').update({ 'read': 1 }).where('id', id)
-    await knex('messages').update({ 'read': 1 }).where('replay_to', id)
+async function setToRead(id, user_id) {
+    await knex('messages').update({ 'read': 1 }).where({'id': id, 'recipient_id': user_id})
+    await knex('messages').update({ 'read': 1 }).where({'replay_to':id, 'recipient_id': user_id})
 }
 
 module.exports = { getAllConversationStarters, countUnreadMessagesByUser, insertMessage, getOneConversation, setToRead }

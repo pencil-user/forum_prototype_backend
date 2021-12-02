@@ -61,7 +61,7 @@ router.patch('/', auth(USER_LEVEL.USER),
     V.query({ 'read': V.number().round() }),
     async (req, res) => {
         console.log("UPDATING " + req.query.read)
-        await messageService.setToRead(req.query.read)
+        await messageService.setToRead(req.query.read, req._user.id)
 
         res.status(200).send([1])
     }
